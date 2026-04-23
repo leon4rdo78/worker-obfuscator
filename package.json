@@ -1,1 +1,16 @@
-
+{
+  "name": "worker-obfuscator",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:minify": "terser src/worker.js -o dist/worker.min.js -c -m",
+    "build:yongk": "javascript-obfuscator dist/worker.min.js --output dist/workerobfuscatedyongk.js --config obfuscator-yongk.json",
+    "build:bpb": "javascript-obfuscator dist/worker.min.js --output dist/workerobfuscatedbpb.js --config obfuscator-bpb.json",
+    "build:extreme": "javascript-obfuscator dist/worker.min.js --output dist/workerobfuscatedextreme.js --config obfuscator-extreme.json",
+    "build:all": "npm run build:minify && npm run build:yongk && npm run build:bpb && npm run build:extreme"
+  },
+  "devDependencies": {
+    "javascript-obfuscator": "^4.1.1",
+    "terser": "^5.39.0"
+  }
+}
