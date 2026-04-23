@@ -1,1 +1,24 @@
-
+{
+  "compact": true,
+  "controlFlowFlattening": true,
+  "controlFlowFlatteningThreshold": 1,
+  "deadCodeInjection": true,
+  "deadCodeInjectionThreshold": 0.4,
+  "identifierNamesGenerator": "hexadecimal",
+  "renameGlobals": false,
+  "rotateStringArray": true,
+  "selfDefending": true,
+  "shuffleStringArray": true,
+  "splitStrings": true,
+  "splitStringsChunkLength": 6,
+  "stringArray": true,
+  "stringArrayCallsTransform": true,
+  "stringArrayCallsTransformThreshold": 1,
+  "stringArrayEncoding": ["base64"],
+  "stringArrayIndexShift": true,
+  "stringArrayRotate": true,
+  "stringArrayShuffle": true,
+  "stringArrayThreshold": 1,
+  "unicodeEscapeSequence": true,
+  "simplify": true
+}
